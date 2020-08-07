@@ -1,0 +1,28 @@
+{
+  "name": "tomorrow",
+  "authors": [
+    "Julia <juliawebscat@gmail.com>"
+  ],
+  "description": "test",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  },
+  "overrides": {
+    "bootstrap": {
+        "main": [
+            "./dist/js/bootstrap.min.js",
+            "./dist/css/bootstrap.min.css"
+            ]
+    }
+  }
+}
