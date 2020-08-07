@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /tomorrow
+/bower_components
 /.pnp
 .pnp.js
 
