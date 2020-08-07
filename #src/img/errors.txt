@@ -1,0 +1,5 @@
+[2020-8-7 19:25:07] layer "Thus much I thought proper to tell you in relation to yourself,": Expected end of input but "," found.
+[2020-8-7 19:25:07] layer "denis@getcraftwork.com": Unsupported extension: com
+[2020-8-7 19:25:07] layer "Thus much I thought proper to tell you in relation to yourself,": Expected end of input but "," found.
+[2020-8-7 19:25:07] layer "It was some time before he obtained any answer, and the reply, ": Expected end of input but "," found.
+[2020-8-7 19:25:07] layer "screen-2.jpg": Duplicate path: screen-2.jpg

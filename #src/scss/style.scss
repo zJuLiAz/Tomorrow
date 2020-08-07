@@ -1,0 +1,79 @@
+/* ------- Specification ------- */
+body {
+	font-family: 'Museo Sans', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 0em;
+	color: #404048;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 58px;
+}
+
+h2 {
+	font-size: 29.17px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+}
+
+input, button, button:focus, span:focus {
+	outline: none;
+}
+
+.btn {
+	display: block;
+	background-color: #1cb883;
+	max-width: 156px;
+	width: 100%;
+	font-size: 13px;
+	font-weight: 700;
+	padding: 8px 0 8px 0;
+	text-align: center;
+	color: #fff;
+	border-bottom: #149d6f 4px solid;
+	border-radius: 0;
+}
+
+.btn:focus {
+	box-shadow: none;
+}
