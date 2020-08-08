@@ -11,6 +11,7 @@ let path = {
     js: project_folder + "/js/",
     img: project_folder + "/img/",
     fonts: project_folder + "/fonts/",
+    vendor: project_folder + "/vendor/"
   },
   src: {
     html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -18,12 +19,14 @@ let path = {
     js: source_folder + "/js/script.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts: source_folder + "/fonts/*.ttf",
+    vendor: source_folder + "/vendor/*.{css,js}"
   },
   watch: {
     html: source_folder + "/**/*.html",
     css: source_folder + "/scss/**/*.scss",
     js: source_folder + "/js/**/*.js",
-    img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
+    img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    vendor: source_folder + "/vendor/*.{css,js}"
   },
   clean: "./" + project_folder + "/"
 };
@@ -63,6 +66,12 @@ function html() {
         .pipe(fileinclude())
         .pipe(webphtml())
         .pipe(dest(path.build.html))
+        .pipe(browsersync.stream())
+}
+
+function vendor() {
+    return src(path.src.vendor)
+        .pipe(dest(path.build.vendor))
         .pipe(browsersync.stream())
 }
 
@@ -197,9 +206,10 @@ function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, vendor), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.vendor = vendor;
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 exports.images = images;

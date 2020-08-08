@@ -1,10 +1,13 @@
 /* ------- Specification ------- */
+$clr-text: #8c8f94;
+$clr-title: #26272d;
+
 body {
-	font-family: 'Museo Sans', sans-serif;
-	font-weight: 300;
-	font-size: 14px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
 	letter-spacing: 0em;
-	color: #404048;
+	color: $clr-text;
 	padding: 0;
 	margin: 0;
 }
@@ -23,18 +26,25 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 0;
 	margin: 0;
 	font-weight: 700;
+	color: $clr-title;
+}
+
+h1, h2 {
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 400;
 }
 
 h1 {
-	font-size: 58px;
+	font-size: 62px;
 }
 
 h2 {
-	font-size: 29.17px;
+	font-size: 42px;
 }
 
 h3 {
-	font-size: 24px;
+	font-size: 32px;
+	font-weight: 300;
 }
 
 img {
@@ -62,18 +72,94 @@ input, button, button:focus, span:focus {
 
 .btn {
 	display: block;
-	background-color: #1cb883;
-	max-width: 156px;
-	width: 100%;
-	font-size: 13px;
-	font-weight: 700;
-	padding: 8px 0 8px 0;
+	background-color: #267df4;
+	width: 132px;
+	max-width: 100%;
+	font-size: 16px;
+	font-weight: 400;
+	height: 42px;
+    line-height: 26px;
 	text-align: center;
 	color: #fff;
-	border-bottom: #149d6f 4px solid;
-	border-radius: 0;
+	border: transparent 1px solid;
+	border-radius: 50px;
+	align-items: center;
 }
 
 .btn:focus {
 	box-shadow: none;
 }
+
+// ------------ header ----------------
+
+.header {
+	background: #eef0f3 url(../img/fon.jpg) no-repeat center center / cover;
+}
+
+.navigation {
+	padding: 44px 0;
+}
+
+.menu__item_left {
+	margin-right: 41px;
+}
+
+.menu__link {
+	font-size: 16px;
+	color: #26272d;
+}
+
+.menu__link:hover {
+	color: #b5b5b6;
+}
+
+.menu__link_hamburger {
+	margin-right: 30px;
+}
+
+.menu__item_right {
+	margin-left: 30px;
+}
+
+.menu__btn:hover {
+	border: #267df4 1px solid;
+	background-color: transparent;
+	color: #26272d;
+}
+
+.menu__btn i {
+	font-size: 18px;
+	margin-right: 12px;
+}
+
+.main {
+	padding-top: 71px;
+}
+
+.main-text {
+	margin: 35px auto 60px auto;
+	max-width: 787px;
+}
+
+.main-link {
+	display: block;
+	color: $clr-title;
+	background-color: transparent;
+	border: 1px solid #dadcdf;
+	height: 50px;
+	line-height: 36px;
+	width: 205px;
+	max-width: 100%;
+	margin: 0 auto 55px auto;
+}
+
+.main-link:hover {
+	color: #fff;
+	background-color: #267df4;
+	border: 1px solid #267df4;
+}
+
+.main-link i {
+	margin-right: 15px;
+}
+
