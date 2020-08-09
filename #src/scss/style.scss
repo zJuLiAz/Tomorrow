@@ -163,3 +163,83 @@ input, button, button:focus, span:focus {
 	margin-right: 15px;
 }
 
+// --------- section-causes --------
+.section-causes {
+	padding-top: 122px;
+}
+
+.causes {
+	padding-bottom: 92px;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.cause {
+	margin-left: 38px;
+}
+
+.cause__title {
+	font-weight: 300;
+	font-size: 26px;
+	margin: 42px 0;
+}
+
+.cause__text {
+	margin-bottom: 30px;
+	font-size: 18px;
+	width: 500px;
+}
+
+// --------- section-protect -------
+.section-protect {
+	padding: 126px 0 217px 0;
+}
+
+.container-fluid_plain {
+	padding: 0;
+}
+
+.picture {
+	background: url(../img/iphoneprotect.png) no-repeat left top;
+	height: 772px;
+}
+
+.protect {
+	padding-top: 128px;
+	width: 470px;
+}
+
+.protect__btn {
+	width: 202px;
+	margin-right: 20px;
+}
+
+.protect__btn:hover {
+	@extend .menu__btn:hover;
+}
+
+.protect__buttons i {
+	margin-left: 46px;
+}
+
+.prottect__more {
+	width: 140px;
+	background-color: transparent;
+	color: $clr-title;
+	border: 1px solid #e9e9ea;
+}
+
+.prottect__more:hover {
+	@extend .main-link:hover;
+}
+
+.protect__text {
+	margin-bottom: 32px;
+}
+
+.protect__buttons {
+	margin-top: 43px;
+}
+
+.protect__title {
+	margin-bottom: 67px;
+}
