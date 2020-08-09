@@ -191,20 +191,11 @@ input, button, button:focus, span:focus {
 
 // --------- section-protect -------
 .section-protect {
-	padding: 126px 0 217px 0;
-}
-
-.container-fluid_plain {
-	padding: 0;
-}
-
-.picture {
-	background: url(../img/iphoneprotect.png) no-repeat left top;
-	height: 772px;
+	padding: 254px 0 310px 0;
+	background: url(../img/iphoneprotect.png) no-repeat left center;
 }
 
 .protect {
-	padding-top: 128px;
 	width: 470px;
 }
 
@@ -242,4 +233,35 @@ input, button, button:focus, span:focus {
 
 .protect__title {
 	margin-bottom: 67px;
+}
+
+// --------- section-location ----------------
+.section-location {
+	padding: 129px 0 198px 0;
+	background: url(../img/map.jpg) no-repeat right center;
+}
+
+.location {
+	width: 470px;
+}
+
+.location__title {
+	margin-bottom: 58px;
+}
+
+.location__text {
+	margin-bottom: 34px;
+}
+
+.partners span {
+	display: block;
+	margin: 28px 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	color: $clr-title;
+}
+
+.partners__item {
+	margin-right: 31px;
 }
