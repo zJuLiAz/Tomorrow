@@ -265,3 +265,367 @@ input, button, button:focus, span:focus {
 .partners__item {
 	margin-right: 31px;
 }
+
+// --------- section-interface ----------------
+.section-interface {
+	padding: 140px 0 120px 0;
+	background-color: #f5f5f8;
+}
+
+.interface span {
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.interface span:before {
+	content: '';
+	width: 50px;
+	height: 2px;
+	background-color: #267df4;
+	display: block;
+	margin: 42px auto;
+}
+
+// --------- section-get-it ----------------
+.section-get-it {
+	padding: 75px 0 130px 0;
+	background-color: #f5f5f8;
+}
+
+.get-it__logo {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #a8a9af;
+}
+
+.get-it__logo span {
+	font-weight: 700;
+}
+
+.get-it__title {
+	margin: 35px 0 43px 0;
+}
+
+.form {
+	position: relative;
+}
+
+.form__input {
+	width: 500px;
+	border: 1px solid #cbcbce;
+	font-size: 16px;
+	color: #3a3d4b;
+	border-radius: 50px;
+	padding: 15px 15px 14px 25px;
+}
+
+.form__btn {
+	position: absolute;
+	right: 342px;
+    top: 7px;
+	width: 164px;
+	background-color: #6fc754;
+	border: 1px solid transparent;
+}
+
+.form__btn:hover {
+	border: 1px solid #6fc754;
+	background-color: #fff;
+	color: #6fc754;
+}
+
+.form__btn i {
+	margin-left: 18px;
+}
+
+.get-it__download {
+	display: block;
+	margin: 65px 0 22px 0;
+	text-transform: uppercase;
+	color: #c9c9ce;
+	font-size: 12px;
+}
+
+.get-it__link {
+	width: 210px;
+	background-color: #131315;
+	border: 1px solid transparent;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 12px;
+	margin: 0 auto;
+	padding: 11px 0;
+	text-align: left;
+}
+
+.get-it__link:hover {
+	background-color: #fff;
+	border: 1px solid #131315;
+	color: #131315;
+}
+
+.download-text p {
+	margin-left: 2px;
+}
+
+.get-it__link span {
+	font-size: 23px;
+	display: block;
+	line-height: 1;
+}
+
+.get-it__link i {
+	font-size: 33px;
+	margin-right: 18px;
+}
+
+// --------- section-reviews ----------------
+.section-reviews {
+	padding: 132px 0 126px 0;
+}
+
+// --------- section-plan ----------------
+.section-plan {
+	background-color: #f4f4f5;
+	padding: 159px 0 191px 0;
+}
+
+.plan-offer__title {
+	width: 270px;
+}
+
+.plan-offer__choice {
+	margin: 63px 0 18px 0;
+	color: $clr-title;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.plan-offer__text {
+	margin: 75px 0 41px 0;
+	width: 355px;
+}
+
+.plan-offer__team {
+	font-size: 14px;
+}
+
+.plan-offer__link {
+	color: #267df4;
+	border-bottom: 1px solid #a2bef5;
+}
+
+.plan-offer__link:hover {
+	color: #267df4;
+	border-bottom: 1px solid transparent;
+}
+
+.card {
+	width: 340px;
+	padding: 40px 55px 50px 46px;
+	background-color: #ebebed;
+	border-radius: 10px;
+	border: none;
+}
+
+.card__price {
+	font-weight: 700;
+	font-size: 11px;
+	color: $clr-title;
+	width: 61px;
+	border: 1px solid #c4c4c6;
+	border-radius: 50px;
+	padding: 6px 0 6px 0;
+	margin: 28px auto 54px auto;
+}
+
+.card__text {
+	width: 167px;
+	margin: 0 auto;
+}
+
+.card__list {
+	margin: 25px auto 49px auto;
+	font-size: 16px;
+	color: #26292c;
+	width: 235px;
+}
+
+.card__item {
+	margin-top: 21px;
+}
+
+.card__item i {
+	color: #6fc754;
+	margin-right: 10px;
+}
+
+.card__btn {
+	width: 200px;
+	background-color: transparent;
+	border: 1px solid #267df4;
+	color: #267df4;
+	margin: 0 auto;
+}
+
+.card__btn:hover {
+	background-color: #267df4;
+	color: #fff;
+}
+
+.card__btn_started {
+	margin-top: 45px;
+}
+
+// --------- section-subscription ----------------
+.section-subscription {
+	padding: 88px 0 0 0;
+}
+
+.subscription {
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.subscription-form {
+	position: relative;
+	margin: 48px 0 27px 0;
+}
+
+.subscription-form__input {
+	width: 560px;
+	border: 1px solid #d4d4d5;
+	font-size: 16px;
+	color: #26292c;
+	border-radius: 50px;
+	padding: 15px 15px 14px 25px;
+}
+
+.subscription-form__btn {
+	position: absolute;
+	right: 312px;
+    top: 6px;
+	width: 132px;
+	background-color: #6fc754;
+	border: 1px solid transparent;
+}
+
+.subscription-form__btn:hover {
+	@extend .form__btn:hover;
+}
+
+.subscription__text {
+	font-size: 14px;
+	margin-bottom: 84px;
+}
+
+// --------- section-info ----------------
+.section-info {
+	padding: 90px 0 127px;
+}
+
+.contacts__text {
+	font-size: 14px;
+	margin: 34px 0 30px 0;
+	width: 255px;
+}
+
+.contacts__link {
+	width: 140px;
+	background-color: #000;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 8px;
+	margin: 30px 0 40px 0;
+	padding: 7px 0 5px 0;
+	text-align: left;
+	letter-spacing: 0.05em;
+}
+
+.contacts__link:hover {
+	@extend .get-it__link:hover;
+}
+
+.contacts__link span {
+	font-size: 15.5px;
+	display: block;
+	line-height: 1;
+}
+
+.contacts__link i {
+	font-size: 26px;
+	margin: 0 13px 0 11px;
+}
+
+.networks__link {
+	color: #bdbec0;
+	margin-right: 26px;
+}
+
+.networks__link:hover {
+	color: #000;
+}
+
+.info-title {
+	margin-bottom: 23px;
+	font-size: 12px;
+}
+
+.info-title__link {
+	text-transform: uppercase;
+	color: $clr-title;	
+}
+
+.info-title__link:hover {
+	color: $clr-title;
+	text-decoration: underline;
+}
+
+.info__item {
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.info__link {
+	color: #8c8f94;
+}
+
+.info__link:hover {
+	color: #8c8f94;
+	text-decoration: underline;
+}
+
+// --------- footer ----------------
+.footer {
+	padding: 0 0 26px 0 ;
+}
+
+.more {
+	padding-top: 28px;
+	border-top: 1px solid #f4f4f4;
+}
+
+.more__text {
+	font-size: 14px;
+}
+
+.more__link {
+	color: #3b55e6;
+	text-decoration: underline;
+}
+
+.more__link:hover {
+	color: #3b55e6;
+	text-decoration: none;
+}
+
+.craftwork span {
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 9px;
+	color: $clr-title;
+	margin-right: 11px;
+}

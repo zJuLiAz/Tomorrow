@@ -166,14 +166,18 @@
 							<span>Partners</span>
 							<ul class="partners__list d-flex">
 								<li class="partners__item">
-									<a href="#" class="partners__link">
+									<!-- noindex -->
+									<a href="#" class="partners__link" target="_blank" rel="nofollow">
 										<img src="img/dropbox.png" alt="Dropbox logo" class="partners__img">
 									</a>
+									<!-- /noindex -->
 								</li>
 								<li class="partners__item">
-									<a href="#" class="partners__link">
+									<!-- noindex -->
+									<a href="#" class="partners__link" target="_blank" rel="nofollow">
 										<img src="img/evernote.png" alt="Evernote logo" class="partners__img">
 									</a>
+									<!-- /noindex -->
 								</li>
 							</ul>
 						</div>
@@ -182,7 +186,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section-interface">
+	<section class="section-interface" id="section-interface">
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
@@ -199,35 +203,44 @@
 			</div>
 		</div>
 	</section>
-	<section class="section-get-it">
+	<section class="section-get-it" id="section-get-it">
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col text-center">
 					<div class="get-it">
-						<span>
-							NewProvidence
-						</span>
+						<p class="get-it__logo">
+							<span>New</span>Providence
+						</p>
 						<h2 class="get-it__title">
 							Get it to your smartphone 
 						</h2>
-						<form action="">
-
+						<form action="#" class="form">
+							<input type="email" class="form__input" name="email" placeholder="E-mail">
+							<button type="submit" class="form__btn btn">
+								Send Invite
+								<i class="fa fa-arrow-right"></i>
+							</button>
 						</form>
 						<span class="get-it__download">
 							or Download From
 						</span>
-						<a href="#" class="get-it__link">
-							Download on the 
-							<span>
-								App Store
-							</span>
+						<a href="#" class="get-it__link d-flex justify-content-center align-items-center">
+							<i class="fa fa-apple"></i>
+							<div class="download-text">
+								<p>
+									Download on the 
+								</p>
+								<span>
+									App Store
+								</span>
+							</div>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="sevtion-reviews">
+	<section class="section-reviews" id="section-reviews">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -239,8 +252,77 @@
 	<section class="section-plan" id="section-plan">
 		<div class="container">
 			<div class="row">
-				<div class="col">
+				<div class="col-5">
+					<div class="plan-offer">
+						<h2 class="plan-offer__title">
+							Choose your perfect plan
+						</h2>
+						<div class="plan-offer__choice">You are</div>
 
+						<p class="plan-offer__text">
+							Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
+						</p>
+						<div class="plan-offer__team">
+							Have a bigger team?
+							<a href="#" class="plan-offer__link">Let‘s talk</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-7">
+					<div class="cards d-flex text-center">
+						<div class="card">
+							<h3 class="card__title">
+								Starter
+							</h3>
+							<div class="card__price">
+								free
+							</div>
+							<p class="card__text">
+								Build your schedule every day
+							</p>
+							<ul class="card__list">
+								<li class="card__item">
+									<i class="fa fa-check"></i>
+									Unlimeted events
+								</li>
+								<li class="card__item">
+									<i class="fa fa-check"></i>
+									Connect Dropbox & Evernote
+								</li>
+							</ul>
+							<a href="#" class="card__btn card__btn_started btn">
+								Get started
+							</a>
+						</div>
+						<div class="card">
+							<h3 class="card__title">
+								Pro
+							</h3>
+							<div class="card__price">
+								$4.99
+							</div>
+							<p class="card__text">
+								Make your life better
+							</p>
+							<ul class="card__list">
+								<li class="card__item">
+									<i class="fa fa-check"></i>
+									Unlimeted events
+								</li>
+								<li class="card__item">
+									<i class="fa fa-check"></i>
+									Connect Dropbox & Evernote
+								</li>
+								<li class="card__item">
+									<i class="fa fa-check"></i>
+									Personal Assistant
+								</li>
+							</ul>
+							<a href="#" class="card__btn btn">
+								Make me a Pro
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -248,8 +330,185 @@
 	<section class="section-subscription" id="section-subscription">
 		<div class="container">
 			<div class="row">
-				<div class="col">
-
+				<div class="col text-center">
+					<div class="subscription">
+						<h2 class="subscription__title">
+							Subscribe our newsletters
+						</h2>
+						<form action="#" class="subscription-form">
+							<input type="email" class="subscription-form__input" name="email" placeholder="E-mail">
+							<button type="submit" class="subscription-form__btn btn">
+								Subscribe
+							</button>
+						</form>
+						<p class="subscription__text">
+							We promise to never spam you.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section-info" id="section-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<div class="contacts">
+						<img src="img/newprovidence.png" alt="Newprovidence" class="contacts__logo">
+						<p class="contacts__text">
+							It was some time before he obtained any answer, and the reply, when made, was unpropitious.
+						</p>
+						<a href="#" class="contacts__link d-flex align-items-center">
+							<i class="fa fa-apple"></i>
+							<div class="download-text">
+								<p>
+									Download on the 
+								</p>
+								<span>
+									App Store
+								</span>
+							</div>
+						</a>
+						<div class="networks">
+							<ul class="networks__list d-flex">
+								<li class="networks__item">
+									<!-- noindex -->
+									<a href="#" class="networks__link" target="_blank" rel="nofollow">
+										<i class="fa fa-twitter"></i>
+									</a>
+									<!-- /noindex -->
+								</li>
+								<li class="networks__item">
+									<!-- noindex -->
+									<a href="#" class="networks__link" target="_blank" rel="nofollow">
+										<i class="fa fa-facebook-f"></i>
+									</a>
+									<!-- /noindex -->
+								</li>
+								<li class="networks__item">
+									<!-- noindex -->
+									<a href="#" class="networks__link" target="_blank" rel="nofollow">
+										<i class="fa fa-google-plus"></i>
+									</a>
+									<!-- /noindex -->
+								</li>
+								<li class="networks__item">
+									<!-- noindex -->
+									<a href="#" class="networks__link" target="_blank" rel="nofollow">
+										<i class="fa fa-tumblr"></i>
+									</a>
+									<!-- /noindex -->
+								</li>
+								<li class="networks__item">
+									<!-- noindex -->
+									<a href="#" class="networks__link" target="_blank" rel="nofollow">
+										<i class="fa fa-pinterest-p"></i>
+									</a>
+									<!-- /noindex -->
+								</li>
+								<li class="networks__item">
+									<!-- noindex -->
+									<a href="#" class="networks__link" target="_blank" rel="nofollow">
+										<i class="fa fa-linkedin"></i>
+									</a>
+									<!-- /noindex -->
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="info">
+						<h5 class="info-title">
+							<a href="#" class="info-title__link">
+								Learn More
+							</a>
+						</h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a href="#" class="info__link">
+									How it works?
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="#" class="info__link">
+									Meeting tools
+								</a>								
+							</li>
+							<li class="info__item">
+								<a href="#" class="info__link">
+									Live striming
+								</a>								
+							</li>
+							<li class="info__item">
+								<a href="#" class="info__link">
+									Contat method
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="info">
+						<h5 class="info-title">
+							<a href="#" class="info-title__link">
+								About us
+							</a>
+						</h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a href="#" class="info__link">
+									About us
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="#" class="info__link">
+									Features
+								</a>								
+							</li>
+							<li class="info__item">
+								<a href="#" class="info__link">
+									Privacy police
+								</a>								
+							</li>
+							<li class="info__item">
+								<a href="#" class="info__link">
+									Terms & Conditions
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="info">
+						<h5 class="info-title">
+							<a href="#" class="info-title__link">
+								Support
+							</a>
+						</h5>
+						<ul class="info__list">
+							<li class="info__item">
+								<a href="#" class="info__link">
+									F.A.Q.
+								</a>
+							</li>
+							<li class="info__item">
+								<a href="#" class="info__link">
+									Contact us
+								</a>								
+							</li>
+							<li class="info__item">
+								<a href="#" class="info__link">
+									Live chat
+								</a>								
+							</li>
+							<li class="info__item">
+								<a href="#" class="info__link">
+									Phone call
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -257,10 +516,27 @@
 	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-3">
-					<div class="networks">
-						
-					</div>
+				<div class="col">
+					<div class="more d-flex justify-content-between align-items-center">
+						<p class="more__text">
+							For more freebies visit:
+							<!-- noindex -->
+							<a href="#" class="more__link" target="_blank" rel="nofollow">
+								http://getcraftwork.com
+							</a>
+							<!-- /noindex -->
+						</p>
+						<div class="craftwork d-flex align-items-center">
+							<span>
+								Made with Love by
+							</span>
+							<!-- noindex -->
+							<a href="#" class="craftwork__link" target="_blank" rel="nofollow">
+								<img src="img/craftworc.jpg" alt="CraftWork logo">
+							</a>
+							<!-- /noindex -->
+						</div>
+					</div>	
 				</div>
 			</div>
 		</div>
