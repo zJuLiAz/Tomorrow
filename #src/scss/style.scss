@@ -672,10 +672,9 @@ input, button, button:focus, span:focus {
 // 	content: 'Company';
 // }
 
-.packeges-content__checkbox {
+.switch {
 	display: flex; 
 	font-size: 16px;
-    color: #b5b5b7;
 }
 
 .switcher {
@@ -683,9 +682,7 @@ input, button, button:focus, span:focus {
 }
 
 .switcher input {
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-			appearance: none;
+	appearance: none;
 	position: relative;
 	width: 258px;
 	height: 50px;
@@ -699,8 +696,7 @@ input, button, button:focus, span:focus {
 	z-index: 2;
 	position: absolute;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-			transform: translateY(-50%);
+	transform: translateY(-50%);
 	color: #fff;
 }
 
@@ -722,22 +718,17 @@ input, button, button:focus, span:focus {
 	border-radius: 20px;
 }
 
-.switcher.switcher-1 input:checked {
-	background: transparent;
-	border: 1px solid #d5d6d7;
-}
-
-.switcher.switcher-1 input:checked:before {
+.switcher input:checked:before {
 	color: #26292c;
 	transition: color .5s .2s;
 }
 
-.switcher.switcher-1 input:checked:after {
+.switcher input:checked:after {
 	color: #b5b5b7;
 	transition: color .5s;
 }
 
-.switcher.switcher-1 input:checked + label {
+.switcher input:checked + label {
 	height: 42px;
 	width: 125px;
 	margin:auto;
@@ -748,17 +739,17 @@ input, button, button:focus, span:focus {
 	transition: left .5s, right .4s .2s;
 }
 
-.switcher.switcher-1 input:not(:checked):before {
+.switcher input:not(:checked):before {
 	color: #b5b5b7;
 	transition: color .5s;
 }
 
-.switcher.switcher-1 input:not(:checked):after {
+.switcher input:not(:checked):after {
 	color: #26292c;
 	transition: color .5s .2s;
 }
 
-.switcher.switcher-1 input:not(:checked) + label {
+.switcher input:not(:checked) + label {
 	height: 42px;
 	width: 125px;
 	margin: auto;
