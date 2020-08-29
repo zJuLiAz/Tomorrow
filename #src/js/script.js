@@ -25,6 +25,7 @@ $(document).ready(function(){
     $('.slider-review').slick({
       arrows: false,
       slidesToShow: 1,
+      fade: true,
       asNavFor: ".slider-author"
     });
   }
