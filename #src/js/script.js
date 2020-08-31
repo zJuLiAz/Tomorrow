@@ -18,7 +18,16 @@ $(document).ready(function(){
       slidesToShow: 1,
       centerMode: true,
       variableWidth: true,
-      asNavFor: ".slider-review"
+      asNavFor: ".slider-review",
+      responsive: [
+        {
+          breakpoint: 576,
+          settings: {
+          centerMode: false,
+          variableWidth: false
+          }
+        }
+      ]
     });
   }
   if($('*').is('.slider-review')) {

@@ -105,7 +105,7 @@ input, button, button:focus, span:focus {
 	margin-right: 42px;
 }
 
-.menu-left__item_hamburger {
+.hamburger {
 	margin-right: 30px;
 }
 
@@ -200,7 +200,7 @@ input, button, button:focus, span:focus {
 .cause__text {
 	margin-bottom: 26px;
 	font-size: 18px;
-	width: 500px;
+	max-width: 500px;
 }
 
 .cause-right {
@@ -210,7 +210,7 @@ input, button, button:focus, span:focus {
 // --------- section-protect -------
 .section-protect {
 	padding: 258px 0 310px 0;
-	background: url(../img/iphoneprotect.png) no-repeat left center;
+	background: url(../img/bgiphone6.jpg) no-repeat left center;
 }
 
 .protect {
@@ -260,7 +260,7 @@ input, button, button:focus, span:focus {
 // --------- section-location ----------------
 .section-location {
 	padding: 133px 0 224px 0;
-	background: url(../img/map.jpg) no-repeat right center;
+	background: url(../img/bgworldmap.jpg) no-repeat right center;
 }
 
 .location {
@@ -720,7 +720,7 @@ input, button, button:focus, span:focus {
 	margin: 21px auto 46px auto;
 	font-size: 16px;
 	color: #26292c;
-	width: 235px;
+	max-width: 235px;
 }
 
 .card__item {
@@ -792,7 +792,7 @@ input, button, button:focus, span:focus {
 	padding: 67px 0 124px;
 }
 
-.contacts.contacts {
+.contacts {
 	margin-top: -9px;
 }
 
@@ -918,3 +918,5 @@ input, button, button:focus, span:focus {
 	color: $clr-title;
 	margin: 4px 11px 0 0;
 }
+
+@import 'media-queries'

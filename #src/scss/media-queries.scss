@@ -1,0 +1,230 @@
+/* ------- Media Queries ------- */
+/* 1200 - 1550 px */
+@media screen and (max-width: 1549.98px) {
+    .section-protect {
+        background-position-x: 34%;
+    }
+    .section-location {
+        background-position-x: 55%;
+    }
+}
+
+// /* 1200 - 1260 px */
+// @media screen and (max-width: 1259.98px) {
+//     .section-protect {
+//         background-position-x: 34%;
+//     }
+//     .section-location {
+//         background-position-x: 55%;
+//     }
+// }
+
+/* 992 - 1200 px */
+@media screen and (max-width: 1199.98px) {
+    .section-protect {
+        background-position-x: 80%;
+        background-size: 110%;
+    }
+    .section-protect {
+        padding: 121px 0 185px 0;
+    }
+    .section-location {
+        background-position-x: 38%;
+    }
+    .section-location {
+        padding: 85px 0 224px 0;
+    }
+    .form__btn {
+        right: 219px;
+    }
+    .subscription-form__btn {
+        right: 189px;
+    }
+}
+
+
+/* 768 - 992 px */
+@media screen and (max-width: 991.98px) {
+    .causes {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cause__text {
+        max-width: 100%;
+    }
+    .cause {
+        margin-left: 0;
+    }
+    .cause-right {
+        margin: 35px 0 0 0;
+    }
+    .section-protect {
+        background: none;
+    }
+    .protect {
+        text-align: center;
+        width: 100%;
+    }
+    .protect__buttons {
+        justify-content: center;
+    }
+    .section-protect {
+        padding: 121px 0 140px 0;
+    }
+    .section-location {
+        background: none;
+    }
+    .location {
+        text-align: center;
+        width: 100%;
+    }
+    .partners__list {
+        justify-content: center;
+    }
+    .section-location {
+        padding: 85px 0 170px 0;
+    }
+    .form__btn {
+        right: 99px;
+    }
+    // .slider-author .slick-list {
+    //     overflow: visible;
+    // }
+    .slider-author .slick-arrow.slick-prev {
+        left: 0px;
+    }
+    .slider-author .slick-arrow.slick-next {
+        right: 0px;
+    }
+    .plan-offer {
+        text-align: center;
+    }
+    .plan-offer__title {
+        width: 100%
+    }
+    .switch {
+        justify-content: center;
+    }
+    .plan-offer__text {
+        margin: 64px auto 34px auto;
+        width: 100%;
+    }
+    .plan-offer__team {
+        margin-bottom: 60px;
+    }
+    .cards {
+        justify-content: center;
+    }
+    .section-plan {
+        padding: 179px 0 160px 0;
+    }
+    .subscription-form__btn {
+        right: 69px;
+    }
+    .contacts {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .contacts__text {
+        width: 100%;
+    }
+    .contacts__link {
+        margin: 28px auto 40px auto;
+    }
+    .networks {
+        justify-content: center;
+    }
+    .info {
+        text-align: center;
+    }
+    .section-info {
+        padding: 67px 0 105px;
+    }
+}
+
+/* 576 - 768 px */
+@media screen and (max-width: 767.98px) {
+    .slider .slick-center {
+        background-size: 70%;
+    }
+    .slider__img {
+        max-width: 70%;
+    }
+    .form__btn {
+        right: 9px;
+    }
+    .slider-author {
+        padding: 0 60px;
+    }
+    .slick-list {
+        overflow: hidden;
+    }
+    .slider-review {
+        width: 100%;
+    }
+    .section-plan {
+        padding: 120px 0 160px 0;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        margin: 0 auto 20px;
+    }
+    .subscription-form__input {
+        width: 100%;
+    }
+    .subscription-form__btn {
+        right: 5px;
+    }
+    .more__link {
+        display: block;
+    }
+}
+
+/* 320 - 576 px */
+@media screen and (max-width: 575.98px) {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    .form__input {
+        width: 100%;
+    }
+    .form__btn {
+        right: 5px;
+        width: 125px;
+        padding: 3px 3px 5px 12px;
+    }
+    .form__btn i {
+        margin-left: 10px;
+    }
+    .card {
+        width: 90%;
+    }
+    .info {
+        margin-bottom: 46px;
+    }
+    .section-info {
+        padding: 67px 0 40px;
+    }
+    .more {
+        flex-direction: column;
+        padding-top: 36px;
+    }
+    .craftwork {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .craftwork span {
+        margin: 0 0 10px 0;
+    }
+    .footer {
+        padding: 20px 0 35px 0;
+    }
+}
