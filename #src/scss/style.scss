@@ -14,6 +14,7 @@ body {
 
 p {
 	margin: 0;
+	line-height: 1.45em;
 }
 
 ul, li {
@@ -97,28 +98,36 @@ input, button, button:focus, span:focus {
 }
 
 .navigation {
-	padding: 44px 0;
+	padding: 41px 0;
 }
 
-.menu__item_left {
-	margin-right: 41px;
+.menu-left__item {
+	margin-right: 42px;
 }
 
-.menu__link {
+.menu-left__item_hamburger {
+	margin-right: 30px;
+}
+
+.menu-left__link, .menu-right__link {
 	font-size: 16px;
 	color: #26272d;
 }
 
-.menu__link:hover {
+.menu-left__link:hover, .menu-right__link:hover {
 	color: #b5b5b6;
 }
 
-.menu__link_hamburger {
+.menu-right__item {
 	margin-right: 30px;
 }
 
-.menu__item_right {
-	margin-left: 30px;
+.menu__btn {
+	padding: 0 18px;
+}
+
+.menu__btn span {
+	display: block;
 }
 
 .menu__btn:hover {
@@ -129,15 +138,19 @@ input, button, button:focus, span:focus {
 
 .menu__btn i {
 	font-size: 18px;
-	margin-right: 12px;
+	margin-right: 16px;
 }
 
 .main {
-	padding-top: 71px;
+	padding-top: 67px;
+}
+
+.main-title {
+	letter-spacing: -0.016em;
 }
 
 .main-text {
-	margin: 35px auto 60px auto;
+	margin: 30px auto 58px auto;
 	max-width: 787px;
 }
 
@@ -150,7 +163,7 @@ input, button, button:focus, span:focus {
 	line-height: 36px;
 	width: 205px;
 	max-width: 100%;
-	margin: 0 auto 55px auto;
+	margin: 0 auto 56px auto;
 }
 
 .main-link:hover {
@@ -160,16 +173,17 @@ input, button, button:focus, span:focus {
 }
 
 .main-link i {
-	margin-right: 15px;
+	margin-right: 14px;
+	font-size: 12px;
 }
 
 // --------- section-causes --------
 .section-causes {
-	padding-top: 122px;
+	padding-top: 121px;
 }
 
 .causes {
-	padding-bottom: 92px;
+	padding-bottom: 98px;
 	border-bottom: 1px solid #f4f4f4;
 }
 
@@ -180,18 +194,22 @@ input, button, button:focus, span:focus {
 .cause__title {
 	font-weight: 300;
 	font-size: 26px;
-	margin: 42px 0;
+	margin: 39px 0 37px;
 }
 
 .cause__text {
-	margin-bottom: 30px;
+	margin-bottom: 26px;
 	font-size: 18px;
 	width: 500px;
 }
 
+.cause-right {
+	margin-left: 102px;
+}
+
 // --------- section-protect -------
 .section-protect {
-	padding: 254px 0 310px 0;
+	padding: 258px 0 310px 0;
 	background: url(../img/iphoneprotect.png) no-repeat left center;
 }
 
@@ -201,7 +219,9 @@ input, button, button:focus, span:focus {
 
 .protect__btn {
 	width: 202px;
-	margin-right: 20px;
+    margin-right: 20px;
+    padding: 6px 17px 5px 25px;
+    text-align: left;
 }
 
 .protect__btn:hover {
@@ -209,7 +229,8 @@ input, button, button:focus, span:focus {
 }
 
 .protect__buttons i {
-	margin-left: 46px;
+	margin-left: 48px;
+	font-size: 12px;
 }
 
 .prottect__more {
@@ -224,20 +245,21 @@ input, button, button:focus, span:focus {
 }
 
 .protect__text {
-	margin-bottom: 32px;
+	margin-bottom: 26px;
+	line-height: 1.45em;
 }
 
 .protect__buttons {
-	margin-top: 43px;
+	margin-top: 71px;
 }
 
 .protect__title {
-	margin-bottom: 67px;
+	margin-bottom: 65px;
 }
 
 // --------- section-location ----------------
 .section-location {
-	padding: 129px 0 198px 0;
+	padding: 133px 0 224px 0;
 	background: url(../img/map.jpg) no-repeat right center;
 }
 
@@ -246,20 +268,25 @@ input, button, button:focus, span:focus {
 }
 
 .location__title {
-	margin-bottom: 58px;
+	margin-bottom: 56px;
 }
 
 .location__text {
-	margin-bottom: 34px;
+	margin-bottom: 25px;
+}
+
+.partners {
+	margin-top: 60px;
 }
 
 .partners span {
 	display: block;
-	margin: 28px 0;
+	margin-bottom: 26px;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 12px;
 	color: $clr-title;
+	letter-spacing: 0.1em;
 }
 
 .partners__item {
@@ -268,14 +295,19 @@ input, button, button:focus, span:focus {
 
 // --------- section-interface ----------------
 .section-interface {
-	padding: 140px 0 120px 0;
+	padding: 137px 0 80px 0;
 	background-color: #f5f5f8;
+}
+
+.interface__title {
+	letter-spacing: -0.006em;
 }
 
 .interface span {
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 700;
+	letter-spacing: 0.1em;
 }
 
 .interface span:before {
@@ -284,12 +316,11 @@ input, button, button:focus, span:focus {
 	height: 2px;
 	background-color: #267df4;
 	display: block;
-	margin: 42px auto;
+	margin: 36px auto 29px;
 }
 
-
 .slider {
-	margin: 40px 0;
+	margin: 27px 0;
 }
 
 .slider .slick-center {
@@ -303,13 +334,6 @@ input, button, button:focus, span:focus {
 	padding: 100px 30px 110px 30px;
 }
 
-
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-/* Слайдер с точками */
-.slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */
 .slick-list {
 	overflow: hidden;
@@ -318,40 +342,6 @@ input, button, button:focus, span:focus {
 .slick-track {
 	display: flex;
 }
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
-.slider .slick-arrow {
-	// display: none!important;
-}
-
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
-
-
-
-
 
 // --------- section-get-it ----------------
 .section-get-it {
@@ -363,6 +353,7 @@ input, button, button:focus, span:focus {
 	font-size: 12px;
 	text-transform: uppercase;
 	color: #a8a9af;
+	letter-spacing: 0.1em;
 }
 
 .get-it__logo span {
@@ -370,7 +361,8 @@ input, button, button:focus, span:focus {
 }
 
 .get-it__title {
-	margin: 35px 0 43px 0;
+	margin: 28px 0 45px 0;
+	letter-spacing: -0.006em;
 }
 
 .form {
@@ -383,16 +375,18 @@ input, button, button:focus, span:focus {
 	font-size: 16px;
 	color: #3a3d4b;
 	border-radius: 50px;
-	padding: 15px 15px 14px 25px;
+	padding: 10px 15px 14px 25px;
 }
 
 .form__btn {
 	position: absolute;
-	right: 342px;
-    top: 7px;
-	width: 164px;
-	background-color: #6fc754;
-	border: 1px solid transparent;
+    right: 339px;
+    top: 4px;
+    width: 164px;
+    background-color: #6fc754;
+    border: 1px solid transparent;
+    text-align: left;
+    padding: 3px 3px 5px 31px;
 }
 
 .form__btn:hover {
@@ -403,26 +397,29 @@ input, button, button:focus, span:focus {
 
 .form__btn i {
 	margin-left: 18px;
+	font-size: 12px;
 }
 
 .get-it__download {
 	display: block;
-	margin: 65px 0 22px 0;
+	margin: 62px 0 18px 0;
 	text-transform: uppercase;
 	color: #c9c9ce;
 	font-size: 12px;
+	letter-spacing: 0.1em;
 }
 
 .get-it__link {
 	width: 210px;
-	background-color: #131315;
-	border: 1px solid transparent;
-	border-radius: 50px;
-	color: #fff;
-	font-size: 12px;
-	margin: 0 auto;
-	padding: 11px 0;
-	text-align: left;
+    background-color: #131315;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 12px;
+    margin: 0 auto;
+    padding: 8px 9px 13px 27px;
+    text-align: left;
+    align-items: center;
 }
 
 .get-it__link:hover {
@@ -438,17 +435,17 @@ input, button, button:focus, span:focus {
 .get-it__link span {
 	font-size: 23px;
 	display: block;
-	line-height: 1;
+	line-height: 0.9em;
 }
 
 .get-it__link i {
-	font-size: 33px;
-	margin-right: 18px;
+	font-size: 30px;
+	margin-right: 17px;
 }
 
 // --------- section-reviews ----------------
 .section-reviews {
-	padding: 132px 0 126px;
+	padding: 132px 0 94px;
 }
 
 // Slider author
@@ -503,7 +500,7 @@ input, button, button:focus, span:focus {
 /* Стрелка */
 .slider-author .slick-arrow{
 	position: absolute;
-	top: 30%;
+	top: 26%;
 	z-index: 10;
 	font-size: 0;
 	width: 22px;
@@ -519,12 +516,6 @@ input, button, button:focus, span:focus {
 	right: 20px;
 	background: url(../img/arrow-right.png) no-repeat 0 0 / 100%;
 }
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
-
-
-
 
 // Slider review
 .slider-review {
@@ -532,53 +523,21 @@ input, button, button:focus, span:focus {
 	margin: 0 auto;
 }
 
-/* Слайдер */
-.slick-slider{}
-/* Слайдер запущен */
-.slick-slider.slick-initialized{}
-
-/* Слайд */
-.slick-slide{}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-/* Клонированный слайд */
-.slick-slide.slick-cloned{}
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
-.slider .slick-arrow {
-	// display: none!important;
-}
-
-/* Точки (булиты) */
-.slick-dots{}
-.slick-dots li{}
-/* Активная точка */
-.slick-dots li.slick-active{}
-/* Элемент точки */
-.slick-dots li button{}
-
 .slider-review__item {
 	transition: all 0.1s ease 0.15s;
 }
 
 .slider-review__text {
-	margin: 45px 0 29px 0;
+	margin: 41px 0 18px 0;
 }
 
 .stars {
 	justify-content: center;
-	margin-bottom: 65px;
+	margin-bottom: 54px;
+}
+
+.stars__img {
+	margin: 0 4px;
 }
 
 .author-name {
@@ -589,11 +548,14 @@ input, button, button:focus, span:focus {
 	color: #26272d;
 }
 
-
 // --------- section-plan ----------------
 .section-plan {
 	background-color: #f4f4f5;
-	padding: 159px 0 191px 0;
+	padding: 179px 0 211px 0;
+}
+
+.plan-offer {
+	padding-top: 20px;
 }
 
 .plan-offer__title {
@@ -601,76 +563,13 @@ input, button, button:focus, span:focus {
 }
 
 .plan-offer__choice {
-	margin: 63px 0 18px 0;
+	margin: 63px 0 16px 0;
 	color: $clr-title;
 	text-transform: uppercase;
 	font-size: 12px;
 	font-weight: 700;
+	letter-spacing: 0.1em;
 }
-
-// .checkbox {
-// 	visibility: hidden;
-// }
-
-// .switch {
-// 	position: relative;
-// 	width: 256px;
-// 	height: 48px;
-// 	border: 1px solid #d5d6d7;
-// 	border-radius: 50px;
-// }
-
-// .switch:before {
-// 	content: 'Individual';
-// 	font-size: 16px;
-// 	color: #b5b5b7;
-// 	// position: absolute;
-// 	top: 10px;
-// 	left: 32px;
-// 	// z-index: 2;
-// }
-
-// .switch:after {
-// 	content: 'Company';
-// 	font-size: 16px;
-// 	color: #b5b5b7;
-// 	// position: absolute;
-// 	top: 10px;
-// 	right: 32px;
-// 	// z-index: 2;
-// }
-
-// .checkbox-label {
-// 	display: block;
-// 	width: 124px;
-// 	height: 40px;
-// 	border-radius: 50px;
-// 	background-color: #fff;
-// 	position: absolute;
-// 	top: 3px;
-// 	left: 3px;
-// 	z-index: 1;
-// 	box-shadow: 0 5px 24px 0 rgba(61, 61, 62, 0.2);
-// 	transition: all 0.4s ease;
-// 	cursor: pointer;
-// }
-
-// .checkbox-label:after {
-//     content: 'Individual';
-//     font-size: 16px;
-// 	color: #26292c;
-// 	position: absolute;
-// 	top: 7px;
-// 	left: 28px;
-// }
-
-// .checkbox:checked + .checkbox-label {
-// 	left: 127px;
-// }
-
-// .checkbox:checked + .checkbox-label:after {
-// 	content: 'Company';
-// }
 
 .switch {
 	display: flex; 
@@ -761,7 +660,7 @@ input, button, button:focus, span:focus {
 }
 
 .plan-offer__text {
-	margin: 68px 0 41px 0;
+	margin: 64px 0 34px 0;
 	width: 355px;
 }
 
@@ -771,20 +670,34 @@ input, button, button:focus, span:focus {
 
 .plan-offer__link {
 	color: #267df4;
-	border-bottom: 1px solid #a2bef5;
+	text-decoration: underline;
 }
 
 .plan-offer__link:hover {
 	color: #267df4;
-	border-bottom: 1px solid transparent;
+	text-decoration: none;
 }
 
 .card {
 	width: 340px;
-	padding: 40px 55px 50px 46px;
+	padding: 34px 55px 45px 51px;
 	background-color: #ebebed;
 	border-radius: 10px;
 	border: none;
+	z-index: 1;
+}
+
+.card:hover {
+	background-color: #fff;
+	transition: all 0.5s ease;
+	transform: scale(1.08);
+	z-index: 2;
+	box-shadow: 0 30px 50px rgba(92, 95, 101, 0.25);
+}
+
+.card:hover .card__btn {
+	background-color: #267df4;
+	color: #fff;	
 }
 
 .card__price {
@@ -794,8 +707,8 @@ input, button, button:focus, span:focus {
 	width: 61px;
 	border: 1px solid #c4c4c6;
 	border-radius: 50px;
-	padding: 6px 0 6px 0;
-	margin: 28px auto 54px auto;
+	padding: 5px 0 5px 0;
+	margin: 23px auto 49px auto;
 }
 
 .card__text {
@@ -804,14 +717,14 @@ input, button, button:focus, span:focus {
 }
 
 .card__list {
-	margin: 25px auto 49px auto;
+	margin: 21px auto 46px auto;
 	font-size: 16px;
 	color: #26292c;
 	width: 235px;
 }
 
 .card__item {
-	margin-top: 21px;
+	margin-top: 16px;
 }
 
 .card__item i {
@@ -827,18 +740,14 @@ input, button, button:focus, span:focus {
 	margin: 0 auto;
 }
 
-.card__btn:hover {
-	background-color: #267df4;
-	color: #fff;
-}
-
 .card__btn_started {
 	margin-top: 45px;
 }
 
 // --------- section-subscription ----------------
 .section-subscription {
-	padding: 88px 0 0 0;
+	padding: 83px 0 20px 0;
+    letter-spacing: -0.02em;
 }
 
 .subscription {
@@ -847,7 +756,7 @@ input, button, button:focus, span:focus {
 
 .subscription-form {
 	position: relative;
-	margin: 48px 0 27px 0;
+	margin: 39px 0 24px 0;
 }
 
 .subscription-form__input {
@@ -856,14 +765,14 @@ input, button, button:focus, span:focus {
 	font-size: 16px;
 	color: #26292c;
 	border-radius: 50px;
-	padding: 15px 15px 14px 25px;
+	padding: 11px 15px 13px 25px;
 }
 
 .subscription-form__btn {
 	position: absolute;
-	right: 312px;
-    top: 6px;
-	width: 132px;
+	right: 309px;
+    top: 4px;
+	width: 134px;
 	background-color: #6fc754;
 	border: 1px solid transparent;
 }
@@ -874,31 +783,37 @@ input, button, button:focus, span:focus {
 
 .subscription__text {
 	font-size: 14px;
-	margin-bottom: 84px;
+	margin-bottom: 83px;
+	letter-spacing: 0;
 }
 
 // --------- section-info ----------------
 .section-info {
-	padding: 90px 0 127px;
+	padding: 67px 0 124px;
+}
+
+.contacts.contacts {
+	margin-top: -9px;
 }
 
 .contacts__text {
 	font-size: 14px;
-	margin: 34px 0 30px 0;
+	margin-top: 23px;
 	width: 255px;
+    line-height: 1.72em;
 }
 
 .contacts__link {
-	width: 140px;
-	background-color: #000;
-	border: 1px solid transparent;
-	border-radius: 5px;
-	color: #fff;
-	font-size: 8px;
-	margin: 30px 0 40px 0;
-	padding: 7px 0 5px 0;
-	text-align: left;
-	letter-spacing: 0.05em;
+    width: 140px;
+    background-color: #000;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 8px;
+    margin: 28px 0 33px 0;
+    padding: 6px 8px 8px 8px;
+    text-align: left;
+    letter-spacing: .05em;
 }
 
 .contacts__link:hover {
@@ -909,16 +824,28 @@ input, button, button:focus, span:focus {
 	font-size: 15.5px;
 	display: block;
 	line-height: 1;
+	letter-spacing: 0.12em;
+}
+
+.contacts__link .download-text {
+	letter-spacing: 0.14em;
 }
 
 .contacts__link i {
-	font-size: 26px;
-	margin: 0 13px 0 11px;
+	font-size: 24px;
+	margin-right: 11px;
+}
+
+.networks__link i {
+	font-size: 17px;
+}
+
+.networks__item {
+	margin-right: 27px;
 }
 
 .networks__link {
 	color: #bdbec0;
-	margin-right: 26px;
 }
 
 .networks__link:hover {
@@ -926,8 +853,9 @@ input, button, button:focus, span:focus {
 }
 
 .info-title {
-	margin-bottom: 23px;
+	margin-bottom: 18px;
 	font-size: 12px;
+	letter-spacing: 0.1em;
 }
 
 .info-title__link {
@@ -941,7 +869,7 @@ input, button, button:focus, span:focus {
 }
 
 .info__item {
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 	font-size: 16px;
 }
 
@@ -960,7 +888,7 @@ input, button, button:focus, span:focus {
 }
 
 .more {
-	padding-top: 28px;
+	padding-top: 27px;
 	border-top: 1px solid #f4f4f4;
 }
 
@@ -978,11 +906,15 @@ input, button, button:focus, span:focus {
 	text-decoration: none;
 }
 
+.craftwork {
+	margin-right: 18px;
+}
+
 .craftwork span {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-size: 9px;
 	color: $clr-title;
-	margin-right: 11px;
+	margin: 4px 11px 0 0;
 }
