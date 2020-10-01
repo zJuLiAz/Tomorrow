@@ -92,21 +92,51 @@ input, button, button:focus, span:focus {
 }
 
 // ------------ header ----------------
-
 .header {
 	background: #eef0f3 url(../img/fon.jpg) no-repeat center center / cover;
 }
 
 .navigation {
 	padding: 41px 0;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+.navigation:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+}
+
+.menu {
+	width: 100%;
+	z-index: 20;
+}
+
+.burger {
+	margin-right: 30px;
+}
+
+.nav-wrapper {
+	position: relative;
+}
+
+.logo {
+	position: absolute;
+	top: 18%;
+	left: 43%;
+	z-index: 20;
 }
 
 .menu-left__item {
 	margin-right: 42px;
-}
-
-.hamburger {
-	margin-right: 30px;
 }
 
 .menu-left__link, .menu-right__link {
@@ -123,7 +153,10 @@ input, button, button:focus, span:focus {
 }
 
 .menu__btn {
-	padding: 0 18px;
+    padding: 0 18px;
+    width: 100%;
+	max-width: 132px;
+	z-index: 20;
 }
 
 .menu__btn span {
@@ -142,7 +175,7 @@ input, button, button:focus, span:focus {
 }
 
 .main {
-	padding-top: 67px;
+	padding-top: 191px;
 }
 
 .main-title {
@@ -334,11 +367,10 @@ input, button, button:focus, span:focus {
 	padding: 100px 30px 110px 30px;
 }
 
-/* Ограничивающая оболочка */
 .slick-list {
 	overflow: hidden;
 }
-/* Лента слайдов */
+
 .slick-track {
 	display: flex;
 }
@@ -497,7 +529,6 @@ input, button, button:focus, span:focus {
 	align-items: center;
 }
 
-/* Стрелка */
 .slider-author .slick-arrow{
 	position: absolute;
 	top: 26%;
@@ -506,12 +537,12 @@ input, button, button:focus, span:focus {
 	width: 22px;
 	height: 41px;
 }
-/* Стрелка влево */
+
 .slider-author .slick-arrow.slick-prev{
 	left: 20px;
 	background: url(../img/arrow-left.png) no-repeat 0 0 / cover;
 }
-/* Стрелка вправо */
+
 .slider-author .slick-arrow.slick-next{
 	right: 20px;
 	background: url(../img/arrow-right.png) no-repeat 0 0 / 100%;
@@ -919,4 +950,5 @@ input, button, button:focus, span:focus {
 	margin: 4px 11px 0 0;
 }
 
-@import 'media-queries'
+@import 'preloader';
+@import 'media-queries';
